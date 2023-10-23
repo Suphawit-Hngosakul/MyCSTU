@@ -1,0 +1,75 @@
+@media screen and (max-width:768px) {
+    header{
+        padding: 1.3rem 5%;
+        
+        /*menu*/
+        .icon{
+            display: block;
+        }
+        .icon #close-icon{
+            display: none;
+        }
+        #menu:checked~.icon #menu-icon{
+            display: none;
+        }
+        #menu:checked~.icon #close-icon{
+            display: block;
+        }
+        #menu:checked~.navbar{
+            height: 9rem;
+        }
+        #menu:checked~.list{
+            height: 7rem;
+        }
+        #item:hover{
+            font-size: 1rem;
+            background-color: #1f332f;
+        }
+    }
+    /*nav*/
+    .navbar{
+        top: 100%;
+        left: 0;
+        height: 0;
+        width: 100vw;
+        overflow: hidden;
+        position: absolute;
+        transition: 300ms ease;
+        background-color: #1F2833;
+
+        .list{
+            flex-direction: column;
+        }
+    }
+    footer{
+        flex-direction: column;
+
+        #headcontact{
+            border-right: none;
+            padding-right: 0rem;
+            padding-bottom: 1rem;
+        }
+        #linecontact{
+            display: block;
+            margin-bottom: 1rem;
+        }
+    }
+    .contact{
+        margin: 0 2%;
+        
+
+        .link1{
+
+            border-right: none;
+            padding-right: 0rem;
+            font-size: 0.8rem;
+        }
+        .link1 a{
+            font-size: 0.8rem;
+        }
+        .link2 a{
+            font-size: 0.8rem;
+        }
+    }
+    
+}
