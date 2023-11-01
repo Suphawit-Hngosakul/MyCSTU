@@ -1,7 +1,27 @@
+@media screen and (max-width:1576px){
+    .content:hover #hrinfor{
+        width: 50%;
+    }
+    #hrinfor{
+        width: 30%;
+    }
+    iframe{
+        width: 420px;
+        height: 236px;
+    }
+}
+@media screen and (max-width:1250px){
+    
+    .content{
+        width: 70%;
+    }
+    .content:hover{
+        width: 85%;
+    }
+}
 @media screen and (max-width:768px) {
     header{
         padding: 1.3rem 5%;
-        
         /*menu*/
         .icon{
             display: block;
@@ -36,14 +56,31 @@
         position: absolute;
         transition: 300ms ease;
         background-color: #1F2833;
-
+        /*nav link*/
         .list{
             flex-direction: column;
         }
     }
+    /*------------------------------*/
+    .profile{
+        width: 200px;
+        height: 200px;
+    }
+    .content{
+        width: 70%;
+        /*headinfor*/
+        #headinfor{
+            margin-top: 2rem;
+        }
+    }
+    .content:hover{
+        width: 90%;
+    }
+    
+    /*------------------------------*/
     footer{
         flex-direction: column;
-
+        /*contact*/
         #headcontact{
             border-right: none;
             padding-right: 0rem;
@@ -53,15 +90,11 @@
             display: block;
             margin-bottom: 1rem;
         }
-    }
-    .contact{
+        .contact{
         margin: 0 2%;
-        
-
+        /*contact link*/
         .link1{
-
             border-right: none;
-            padding-right: 0rem;
             font-size: 0.8rem;
         }
         .link1 a{
@@ -70,6 +103,123 @@
         .link2 a{
             font-size: 0.8rem;
         }
+        }
     }
     
+    
+}
+@media screen and (max-width:690px){
+    #headinfor{
+        font-size: 2rem;
+    }
+    .infor{
+        font-weight: 350;
+        font-size: 1rem;
+    }
+    iframe{
+        width: 280px;
+        height: 157.5px;
+    }
+    
+}
+@media screen and (max-width:530px){
+    #headinfor{
+        font-size: 1.5rem;
+    }
+    .infor{
+        font-weight: 350;
+        font-size: 1rem;
+    }
+    #name{
+        padding-right: 1rem;
+    }
+    #nick{
+        padding-left: 1.5rem;
+    }
+    iframe{
+        width: 200px;
+        height: 113px;
+    }
+    /*------------------------------*/
+    footer{
+        flex-direction: column;
+    }
+    /*Contact*/
+    .headcontact{
+        margin-bottom: 0.5rem;
+        border-right: 0;
+        padding-right: 0;
+    }
+    .contact{
+        font-size: 0.8rem;
+    }
+    /*Contact link*/
+    .link1{
+        border-right: 0;
+        padding-right: 0;
+    }
+    .link1 ul{
+        text-align: left;
+        flex-direction: column;
+    }
+    .link2{
+        margin-top: 0.5rem;
+    }
+    #con{
+        display: block;
+        margin-bottom: 0.4rem;
+    }
+}
+@media screen and (max-width:425px){
+    .content{
+        width: 90%;
+    #name{
+        padding-right: 0.3rem;
+    }
+    #nick{
+        padding-left: 1rem;
+    }
+    .content:hover #hrinfor{
+        width: 100%;
+    }
+    #hrinfor{
+        width: 30%;
+    }
+    }
+    /*------------------------------*/
+    footer{
+        .contact{
+            flex-direction: column;
+            /*Contact link*/
+            .link1{
+                margin: 0 auto;
+            }
+            .link2{
+                margin: 1rem auto 0.2rem;
+            }
+            .link2 ul a{
+                padding: 0 1rem;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:310px){
+    .content{
+        border-radius: 30px;
+    }
+    .infor{
+        font-size: 0.8rem;
+    }
+    #name{
+        
+        padding-right: 0.15rem;
+    }
+    #nick{
+        padding-left: 0.5rem;
+    }
+    /*------------------------------*/
+    .link2 ul a{
+        padding: 0 0.1rem;
+    }
 }
