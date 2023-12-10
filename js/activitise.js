@@ -61,6 +61,78 @@ document.getElementById("email").addEventListener("input", validateEmail);
 document.getElementsByName('fav_language').addEventListener("input", fav_language);
 
 //----------------------------------------------------------
+async function submitForm(event) {
+    event.preventDefault();
+  
+    // Validate form inputs before submission
+    if (!validateName() || !validateStudentID() || !validateEmail()) {
+      return;
+    }
+  
+    const startDateInput = document.getElementById("startDate").value;
+    const endDateInput = document.getElementById("endDate").value;
+    const startDate = new Date(startDateInput);
+    const endDate = new Date(endDateInput);
+  
+    if (endDate <= startDate) {
+      alert("End datetime should be after the start datetime.");
+      return;
+    }
+  
+    // Create the data object to send to the backend
+    const formData = new FormData(event.target);
+    const data = {
+      first_name: formData.get("fullname").split(" ")[0],
+      last_name: formData.get("fullname").split(" ")[1],
+      student_id: parseInt(formData.get("studentID")),
+      email: formData.get("email"),
+      title: formData.get("workTitle"),
+      type_of_work_id: parseInt(formData.get("activityType")),
+      academic_year: parseInt(formData.get("academicYear")) - 543,
+      semester: parseInt(formData.get("semester")),
+      start_date: formData.get("startDate"),
+      end_date: formData.get("endDate"),
+      location: formData.get("location"),
+      description: formData.get("description"),
+      Gender: formData.get("fav_language")
+    };
+  
+    console.log(data);
+  
+    try {
+      // Send data to the backend using POST request
+      const response = await fetch(`http://${window.location.hostname}:${port}/record`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (response.ok) {
+        const responseData = await response.json();
+        console.log("Form data submitted successfully!");
+  
+        // Format JSON data for display
+        const formattedData = Object.entries(responseData.data)
+          .map(([key, value]) => `"${key}": "${value}"`)
+          .join("\n");
+  
+        // Display success message with formatted data
+        alert(responseData.message + "\n" + formattedData);
+  
+        document.getElementById("myForm").reset();
+      } else {
+        console.error("Failed to submit form data.");
+  
+        // Display error message
+        alert("Failed to submit form data. Please try again.");
+      }
+    } catch (error) {
+      console.error("An error occurred while submitting form data:", error);
+    }
+  }
+//----------------------------------------------------------
 // Function to validate Student ID ADD 1 JS*** 
 function validateStudentID() {
     const studentIDInput = document.getElementById("studentID");
