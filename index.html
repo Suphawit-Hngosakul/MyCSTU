@@ -3,97 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - CSTU Passport</title>
     <!--Link-->
-    <link rel="stylesheet" href="css/indexstyle.css">
-    <link rel="stylesheet" href="css/Responsive.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!--Title-->
-    <title>CSTU Passport</title>
 </head>
 <body>
     <header>
         <!--Logo Web-->
-        <a href="index.html" class="logo">CSTU PASSPORT</a>
-        <!--Menu-->
-        <input type="checkbox" id="menu">
-        <label for="menu" class="icon">
-            <i class="fa-solid fa-bars" id="menu-icon"></i>
-            <i class="fa-solid fa-x" id="close-icon"></i>
-        </label>
+        <a href="index.html" class="logo">CSTU TEAM-G22</a>
         <!--Navbar-->
         <nav class="navbar">
             <ul class="list">
-                <li id="item"><a href="html/myProfile.html">About Me</a></li>
-                <li id="item"><a href="html/myAdvisor.html">Advisor</a></li>
-                <li id="item"><a href="html/myActivities.html">TU Activity</a></li>
+                <a href="index.html" id="item"><li>Home</li></a>
+                <a href="html/our_activities.html" id="item"><li>Form</li></a>
             </ul>
         </nav>
     </header>
-
     <main>
-        <div class="pf">
-        <!--Profile img-->
-        <figure class="profile">
-            <div id="imgprofile">
-                <img src="image/v1.jpg">
-                <img id="top-img" src="image/v2.jpg">
-            </div>
-        </figure>
-        </div>
-        
-        <!--Content-->
-        <section class="content">
-            <!--Head Content-->
-            <h2 id="headinfor">INFORMATION</h2>
-            <hr id="hrinfor">
-            <!--Information-->
-            <aside class="infor">
-                <div id="idstudent">Student ID: 6609650053</div>
-                <div class="me">
-                    <table>
-                        <tr>
-                            <td id="name">Suphawit</td>
-                            <td id="name">Hngosakul</td>
-                            <td id="nick">View</td>
-                        </tr>
-                        <tr>
-                            <td id="name">ศุภวิชญ์</td>
-                            <td id="name">หงอสกุล</td>
-                            <td id="nick">วิว</td>
-                        </tr>
-                    </table>
-                    <div id="hbd">Birthday: 29/07/2004</div>
+        <section class="profile-a">
+            <div class="container">
+                <div class="content con-view">
+                    <div class="content-overlay"></div>
+                    <img class="content-image" src="image/p-1.jpg">
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">VIEW</h3>
+                        <p class="content-text">Suphawit Hngosakul</p>
+                    </div>
                 </div>
-                <!--VDO-->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MPmm0xFfGKg?si=qnI67PyxSzzYHBui" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </aside>
+            </div>
+            <div class="container">
+                <div class="content con-eye">
+                    <div class="content-overlay"></div>
+                    <img class="content-image" src="image/p-2.jpg">
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">EYE</h3>
+                        <p class="content-text">Apawan Kongkanan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content con-boom">
+                    <div class="content-overlay"></div>
+                    <img class="content-image" src="image/p-3.jpg">
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">BOOM</h3>
+                        <p class="content-text">Nat Pemkittikul</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="clink-in">
+            <p>CLINK-IN</p>
+            <p><i class="fa-solid fa-arrow-down"></i></p>
+        </div>
+        <section class="infornation-a">
+            <a href="#b-icon">
+                <div class="bottom">
+                    <div id="b-icon">
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                </div>
+            </a>
+            <div class="information infor-view">
+                <div class="inforcontent">
+                    <img src="image/i-1.jpg" class="infor-image">
+                    <div class="infor-details">
+                        <h3 class="infor-title">Suphawit Hngosakul</h3>
+                        <div class="infor-text">
+                            <p>ID Student : 6609650053</p>
+                            <p>Name : Suphawit Hngosakul &nbsp&nbsp Nickname : View</p>
+                            <p>birthday : 29 July 2004</p>
+                        </div>
+                        <ul class="infor-link">
+                                <li><a href="mailto:suphawit.hng@dome.tu.ac.th"><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href="tel:065022741"><i class="fa-solid fa-phone"></i></a></li>
+                                <li><a href="https://line.me/ti/p/oL977bDu9g" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                                <li><a href="https://www.facebook.com/suphawit.hngosakul" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/_s.vvixw.29/?hl=th" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="information infor-eye">
+                <div class="inforcontent">
+                    <img src="image/i-2.jpg" class="infor-image">
+                    <div class="infor-details">
+                        <h3 class="infor-title">Apawan Kongkanan</h3>
+                        <div class="infor-text">
+                            <p>ID Student : 6609650020</p>
+                            <p>Name : Apawan Kongkanan &nbsp&nbsp Nickname : Eye</p>
+                            <p>birthday : 17 October 2004</p>
+                        </div>
+                        <ul class="infor-link">
+                                <li><a href="mailto:apawan.kon@dome.tu.ac.th"><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href="tel:0960685104"><i class="fa-solid fa-phone"></i></a></li>
+                                <li><a href="https://line.me/ti/p/hDYSazMuST" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                                <li><a href="https://www.facebook.com/eyejung.kongkanan?mibextid=2JQ9oc" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://instagram.com/apax._?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="information infor-boom">
+                <div class="inforcontent">
+                    <img src="image/i-3.jpg" class="infor-image">
+                    <div class="infor-details">
+                        <h3 class="infor-title">Nat Pemkittikul</h3>
+                        <div class="infor-text">
+                            <p>ID Student : 6609650335</p>
+                            <p>Name : Nat Pemkittikul &nbsp&nbsp Nickname : Boom</p>
+                            <p>birthday : 11 June 2004</p>
+                        </div>
+                        <ul class="infor-link">
+                                <li><a href="mailto:Nat.pen@dome.tu.ac.th"><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href="tel:0649946162"><i class="fa-solid fa-phone"></i></a></li>
+                                <li><a href="https://line.me/ti/p/UX7Sb5LEEB" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                                <li><a href="https://www.facebook.com/nat.permkittikun?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://instagram.com/bgkcb._?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <!--Contact-->
     <footer>
-        <!--Head Contact-->
-        <b id="headcontact">CONTACT</b>
-        <hr id="linecontact" color="#F5F5DC">
-        <!--Contact-->
-        <div class="contact">
-            <!--Contact1-->
-            <span class="link1">
-                <ul>
-                    <li><b>Email :</b><a href="mailto:suphawit.hng@dome.tu.ac.th"> suphawit.hng@dome.tu.ac.th</a></li>
-                    <li><b>Phone :</b><a href="tel:065022741"> 0655022741</a></li>  
-                </ul>
-            </span>
-            <!--Contact2-->
-            <span class="link2">
-                <ul>
-                    <li><a href="https://line.me/ti/p/oL977bDu9g" target="_blank"><i class="fa-brands fa-line"></i></a></li>
-                    <li><a href="https://www.facebook.com/suphawit.hngosakul" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/_s.vvixw.29/?hl=th" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/Kumieiei29" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
-            </span>
-        </div>
+        By Team G-22
     </footer>
+    <script>
+        const config = {
+            backendUrl: "http://localhost:8000/", // Default backend URL
+        };
+        const port = 8000;
+    </script>
 </body>
 </html>

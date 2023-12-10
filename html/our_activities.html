@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - CSTU Passport</title>
+    <link rel="stylesheet" href="../css/activitise.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=IBM+Plex+Sans+Thai+Looped&family=Kanit:wght@500&family=Kodchasan:wght@700&family=Noto+Sans+Thai+Looped&family=Noto+Sans+Thai:wght@400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--Logo Web-->
+        <a href="../index.html" class="logo">CSTU TEAM-G22</a>
+        <!--Navbar-->
+        <nav class="navbar">
+            <ul class="list">
+                <a href="../index.html" id="item"><li>Home</li></a>
+                <a href="../html/our_activities.html" id="item"><li>Form</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Form Container -->
+        <div class="form-container">
+            <h1>Santa tell you &#127877; &#9924;</h1>
+            <!-- Main Form -->
+            <form id="myForm" action="#" method="post">
+                <!-- Firstname and Lastname Field -->
+                <div class="form-group">
+                    <label for="fullname">NAME SURNAME</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Name and Surname">
+                    <small>Only enter your first name and last name, middle name is not necessary.</small>
+                    <span id="fullnameError" class="error"></span>
+                </div>
+                <!-- Student ID Field -->
+                <div class="form-group">
+                    <label for="studentID">STUDENT ID</label>
+                    <input type="text" id="studentID" name="studentID" placeholder="Student ID is 6609XXXXXX">
+                    <small>Please enter your 10-digit student ID.</small>
+                    <span id="studentIDError" class="error"></span>
+                </div>
+                <!-- Gender -->
+                <div class="form-g" id="genderGroup">
+                    <label for="Gender" class="f-gender">Gender</label>
+                    <label for="Gender">
+                        <input type="radio" id="Male" name="fav_language" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" id="Female" name="fav_language" value="Female">
+                        <label for="Female">Female</label>
+                        <input type="radio" id="Lgbtq+" name="fav_language" value="Lgbtq+">
+                        <label for="Lgbtq+">Lgbtq+</label>
+                        <span id="genderError" class="error"></span>
+                    </label>
+                </div>
+                <!-- University Email Field -->
+                <div class="form-group">
+                    <label for="email">UNIVERSITY EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="email@dome.tu.ac.th">
+                    <small>Please provide your university email in the format "xxx.yyy@dome.tu.ac.th".</small>
+                    <span id="emailError" class="error"></span>
+                </div>
+                <!-- Faculty of -->
+                <div class="form-group">
+                    <label for="Faculty of">Faculty of</span></label>
+                    <select id="Faculty of" name="Faculty of" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
+                        <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี</option>
+                        <option value="คณะรัฐศาสตร์">คณะรัฐศาสตร์</option>
+                        <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                        <option value="คณะสังคมสงเคราะห์ศาสตร์">คณะสังคมสงเคราะห์ศาสตร์</option>
+                        <option value="คณะสังคมวิทยาและมานุษยวิทยา">คณะสังคมวิทยาและมานุษยวิทยา</option>
+                        <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                        <option value="คณะวารสารศาสตร์และสื่อสารมวลชน">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                        <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                        <option value="คณะวิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์</option>
+                        <option value="คณะสถาปัตยกรรมและการผังเมือง">คณะสถาปัตยกรรมและการผังเมือง</option>
+                        <option value="คณะศิลปกรรมศาสตร์">คณะศิลปกรรมศาสตร์</option>
+                        <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์</option>
+                        <option value="คณะสหเวชศาสตร์">คณะสหเวชศาสตร์</option>
+                        <option value="คณะทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
+                        <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+                        <option value="คณะสาธารณสุขศาสตร์">คณะสาธารณสุขศาสตร์</option>
+                        <option value="คณะเภสัชศาสตร์">คณะเภสัชศาสตร์</option>
+                        <option value="คณะวิทยาการเรียนรู้และศึกษาศาสตร์">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+                        <option value="วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์">วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์</option>
+                        <option value="วิทยาลัยนวัตกรรม">วิทยาลัยนวัตกรรม</option>
+                        <option value="วิทยาลัยสหวิทยาการ">วิทยาลัยสหวิทยาการ</option>
+                        <option value="วิทยาลัยโลกคดีศึกษา">วิทยาลัยโลกคดีศึกษา</option>
+                        <option value="สถาบันเทคโนโลยีนานาชาติสิรินธร">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
+                        <option value="วิทยาลัยนานาชาติ ปรีดี พนมยงค์">วิทยาลัยนานาชาติ ปรีดี พนมยงค์</option>
+                        <option value="วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
+                        <option value="สถาบันเสริมศึกษาและทรัพยากรมนุษย์">สถาบันเสริมศึกษาและทรัพยากรมนุษย์</option>
+                        <option value="สถาบันไทยคดีศึกษา">สถาบันไทยคดีศึกษา</option>
+                        <option value="สถาบันเอเชียตะวันออกศึกษา">สถาบันเอเชียตะวันออกศึกษา</option>
+                        <option value="สถาบันภาษา">สถาบันภาษา</option>
+                        <option value="สถาบันอาณาบริเวณศึกษา">สถาบันอาณาบริเวณศึกษา</option>
+                    </select>
+                </div>
+                <!-- Work/Activity Title Field -->
+                <div class="form-group">
+                    <label for="workTitle">Work/Activity Title</label>
+                    <input type="text" id="workTitle" name="workTitle" required />
+                </div>
+                <!-- Type of Work/Activity Field -->
+                <div class="form-group">
+                    <label for="activityType">Type of Work/Activity</label>
+                    <select id="activityType" name="activityType" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Course">Course</option>
+                        <option value="Activity">Activity</option>
+                        <option value="Work">Work</option>
+                        <option value="Research">Research</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Competition">Competition</option>
+                        <option value="Computer Science">Computer Science</option>
+                    </select>
+                </div>
+                <!-- Academic Year Field -->
+                <div class="form-group">
+                    <label for="academicYear">Academic Year</label>
+                    <select id="academicYear" name="academicYear" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="2561">2561</option>
+                        <option value="2562">2562</option>
+                        <option value="2563">2563</option>
+                        <option value="2564">2564</option>
+                        <option value="2565">2565</option>
+                        <option value="2566">2566</option>
+                        <option value="2567">2567</option>
+                        <option value="2568">2568</option>
+                        <option value="2569">2569</option>
+                    </select>
+                </div>
+                <!-- Semester Field -->
+                <div class="form-group">
+                    <label for="semester">Semester</label>
+                    <select id="semester" name="semester" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="Summer">Summer</option>
+                    </select>
+                </div>
+                <!-- Date/Time Field -->
+                <div class="form-group">
+                    <label for="startDate"> Date/Time </label>
+                    <input type="datetime-local" id="startDate" name="startDate" required />
+                </div>
+                <!-- Description Field -->
+                <div class="form-group">
+                    <label for="imageInput">Image Activity </label>
+                    <input type="file" id="imageInput" accept="image/*" required>
+                </div>
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <input type="submit" value="Submit"
+                        onclick="return validation(); document.getElementById('myForm').style.display='none'">
+                </div>
+            </form>
+        </div>
+        <!-- ShowDate -->
+        <div id="submittedData">
+            <div id="DateUser"></div>
+            <div id="DateActivity"></div>
+            <div id="Dateimage"></div>
+        </div>
+        <!-- JavaScript -->
+        <script src="../js/activitise.js"></script>
+        <!-- backgrounds -->
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake"><img src="../image/1.png" width="100px"></div>
+            <div class="snowflake"><img src="../image/2.png" width="100px"></div>
+            <div class="snowflake"><img src="../image/3.png" width="100px"></div>
+            <div class="snowflake"><img src="../image/4.png" width="100px"></div>
+            <div class="snowflake"><img src="../image/5.png" width="100px"></div>
+            <div class="snowflake"><img src="../image/6.png" width="100px"></div>
+            <div class="snowflake"><img src="../image/7.png" width="100px"></div>
+            <div class="snowflake"><img src="../image/8.png" width="100px"></div>
+            <div class="snowflake"><img src="../image/9.png" width="100px"></div>
+            <div class="snowflake"><img src="../image/2.png" width="100px"></div>
+        </div>
+    </main>
+    
+</body>
+
+</html>
